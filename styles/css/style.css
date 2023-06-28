@@ -1,2 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a, ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #969F9A;
+}
+
+.wrapper {
+  margin: 0 80px;
+}
+
+.main-button {
+  width: 400px;
+  height: 65px;
+  border: none;
+  border-radius: 100px;
+  background-color: #527246;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__item {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  padding: 20px 0;
+}
+.header__item-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.header__item-action {
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+}
+.header__item-number {
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+}
+.header__item-button {
+  width: 215px;
+}
+
+.about {
+  background-image: url(../../assets/images/main-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.about__content-title {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 57px;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #7F9E56;
+  border-bottom: 1px solid #969F9A;
+  padding-bottom: 30px;
+}
+.about__content-text {
+  width: 620px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 30px;
+}/*# sourceMappingURL=style.css.map */
