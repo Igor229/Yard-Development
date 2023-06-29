@@ -17,6 +17,7 @@ $text-color: #969F9A;
 a, ul {
     list-style: none;
     text-decoration: none;
+    color: $text-color;
 }
 
 body {
@@ -46,6 +47,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: $main-color;
 
     &__items {
         display: flex;
@@ -116,6 +118,67 @@ body {
             line-height: 28px;
             text-align: center;
             padding-top: 30px;
+        }
+    }
+}
+
+.footer {
+    background-color: $main-color;
+    padding: 35px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        &-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $text-color;
+        }
+
+        .content__item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &-title {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &-text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #fff;
+            }
+
+            &-logo {
+                width: 200px;
+                height: 115px;
+            }
+        }
+    }
+
+    &__actions {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-socials {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+
+            .social-icon {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }
