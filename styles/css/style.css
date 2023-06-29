@@ -104,6 +104,105 @@ body {
   padding-top: 30px;
 }
 
+.complexes {
+  margin-top: 110px;
+}
+.complexes__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora", serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 68px;
+  color: #181E1A;
+}
+.complexes__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.complexes .complex__info {
+  display: flex;
+  flex-direction: row;
+}
+.complexes .complex__info-slider {
+  background-image: url(../../assets/images/beskid-home.png);
+  width: 620px;
+  height: 620px;
+}
+.complexes .complex__info-text {
+  width: 620px;
+  height: 620px;
+  background-color: #181E1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 36px;
+  border-radius: 0 20px 20px 0;
+}
+.complexes .complex__info-text .info__title {
+  font-family: "Lora", serif;
+  color: #7F9E56;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.complexes .complex__info-text .info__text {
+  font-size: 18px;
+  color: #969F9A;
+  font-weight: 400;
+  line-height: 24px;
+}
+.complexes .complex__info-text .info__text span {
+  color: #7F9E56;
+  font-size: 20px;
+}
+.complexes .complex__info-text .info__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.complexes .complex .form {
+  margin-top: 45px;
+  margin-bottom: 110px;
+}
+.complexes .complex .form__container {
+  display: flex;
+  flex-direction: column;
+}
+.complexes .complex .form__container-title {
+  font-family: "Lora", serif;
+  color: #181E1A;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.complexes .complex .form__container-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+}
+.complexes .complex .form__container-actions .form-input {
+  width: 405px;
+  height: 65px;
+  padding: 0 20px;
+  align-items: center;
+  border: 1px solid #969F9A;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  color: #969F9A;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .footer {
   background-color: #181E1A;
   padding: 35px 0;

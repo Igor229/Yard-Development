@@ -122,6 +122,123 @@ body {
     }
 }
 
+.complexes {
+    margin-top: 110px;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $title-font;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 68px;
+        color: $main-color;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .complex {
+
+        &__info {
+            display: flex;
+            flex-direction: row;
+            
+            &-slider {
+                background-image: url(../../assets/images/beskid-home.png);
+                width: 620px;
+                height: 620px;
+            }
+
+            &-text {
+                width: 620px;
+                height: 620px;
+                background-color: $main-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 0 36px;
+                border-radius: 0 20px 20px 0;
+                
+
+                .info__title {
+                    font-family: $title-font;
+                    color: $title-color;
+                    font-size: 32px;
+                    font-weight: 500;
+                    line-height: 40px;
+                }
+
+                .info__text {
+                    font-size: 18px;
+                    color: $text-color;
+                    font-weight: 400;
+                    line-height: 24px;
+
+                    & span {
+                        color: $title-color;
+                        font-size: 20px;
+                    }
+                }
+
+                .info__price {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+
+        .form {
+            margin-top: 45px;
+            margin-bottom: 110px;
+
+            &__container {
+                display: flex;
+                flex-direction: column;
+                
+                &-title {
+                    font-family: $title-font;
+                    color: $main-color;
+                    font-size: 32px;
+                    font-weight: 500;
+                    line-height: 40px;
+                }
+
+                &-actions {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-top: 45px;
+
+                    .form-input {
+                        width: 405px;
+                        height: 65px;
+                        padding: 0 20px;
+                        align-items: center;
+                        border: 1px solid $text-color;
+                        border-radius: 8px;
+                        background-color: #fff;
+                        font-size: 16px;
+                        font-family: $base-font;
+                        color: $text-color;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .footer {
     background-color: $main-color;
     padding: 35px 0;
