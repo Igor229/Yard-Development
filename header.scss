@@ -1,0 +1,73 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: $main-color;
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+        padding: 10px 0;
+
+        &-nav {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
+
+        &-action {
+            color: #fff;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #fff;
+                transition: width .3s;
+            }
+
+            &:hover::after {
+                width: 100%;
+                transition: width .3s;
+            }
+        }
+
+        &-number {
+            color: #fff;
+            font-weight: 500;
+            line-height: 24px;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #fff;
+                transition: width .3s;
+            }
+
+            &:hover::after {
+                width: 100%;
+                transition: width .3s;
+            }
+        }
+
+        &-button {
+            width: 180px;
+            height: 65px;
+        }
+    }
+}

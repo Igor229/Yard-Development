@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="styles/css/style.css">
     <title>Yard Development</title>
 </head>
@@ -30,11 +32,7 @@
         <div class="about__content">
             <h1 class="about__content-title">YARD DEVELOPMENT</h1>
             <p class="about__content-text">
-                Будівельна компанія, що займається будівництвом з
-                2018 року і за цей період вже ввела в експлуатацію понад 89 будинків.
-                Зараз ми займаємось реалізацією проекту найбільшого містечка
-                таунхаусів у західному регіоні, яке має назву WEST TOWN, а також
-                котеджів зі спа-зоною у гірськолижному курорті Буковель.
+                Понад 89 будинків введено в експлуатацію. Дбаємо про ваш комфорт та затишок!
             </p>
         </div>
     </section>
@@ -44,9 +42,22 @@
             <h2 class="complexes__title">Наші комплекси</h2>
 
             <div class="complexes__items">
+                
                 <div class="complex">
                     <div class="complex__info">
-                        <div class="complex__info-slider"></div>
+                        <div class="complex__info-slider">
+                            <div class="complex__info-slider">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid1.png" alt="beskid-home"></div>
+                                      <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid2.png" alt="west-town"></div>
+                                      <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid3.png" alt="west-town"></div>
+                                      <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid4.png" alt="west-town"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                  </div>
+                            </div>
+                        </div>
                         <div class="complex__info-text">
                             <h3 class="info__title">Beskid home resorte</h3>
                             <p class="info__text">
@@ -56,16 +67,16 @@
 
                             <p class="info__text">
                                 Він складається із 8-ми котеджів та СПА-зони.
-                                Є два типи котеджів, які відрізняється тільки за площею терас:
-                                Тип 1 - площа 117,94 м2 - тераса 16,80 м2
-                                Тип 2 - площа 121,27 м2 - тераса 27,90 м2
+                                Є два типи котеджів, які відрізняється тільки за площею терас: <br>
+                                Тип 1 - площа 117,94 м2 - тераса 16,80 м2 <br>
+                                Тип 2 - площа 121,27 м2 - тераса 27,90 м2 <br>
                                 У вартість до кожного котеджу входить ділянка площею 1,5 сотки.
-                                Комплекс передбачає наявність власної СПА-зони, яка включатиме
-                                - сезонний басейн під відкритим небом
-                                -джакузі/басейн із зоною гідромасажу
-                                -фінська сауна, хамам
-                                -тропічний душ
-                                -послуги масажу
+                                Комплекс передбачає наявність власної СПА-зони, яка включатиме: <br>
+                                - сезонний басейн під відкритим небом <br>
+                                -джакузі/басейн із зоною гідромасажу <br>
+                                -фінська сауна, хамам <br>
+                                -тропічний душ <br>
+                                -послуги масажу <br>
                                 Будинки продаються під ключ, з ремонтом, меблями та технікою.
                                 Власна управлінська компанія яка бере на себе всі клопоти.
                                 Можливе розтермінування до кінця будівництва.
@@ -77,7 +88,7 @@
 
                     <form action="#" class="form">
                         <div class="form__container">
-                            <h4 class="form__container-title">Бажаєте придбати? Залиште заявку.</h4>
+                            <h4 class="form__container-title">Отримати повний огляд котеджу</h4>
 
                             <div class="form__container-actions">
                                 <input class="form-input" type="tel" name="phone" pattern="[+]{1}[0-9]{11,14}" maxlength="13" placeholder="+380(98)-99-99-999" required>
@@ -91,7 +102,15 @@
 
                 <div class="complex">
                     <div class="complex__info">
-                        <div class="complex__info-slider"></div>
+                        <div class="complex__info-slider">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="assets/images/beskid-home.png" alt="beskid-home"></div>
+                                  <div class="swiper-slide"><img src="assets/images/west-town.png" alt="west-town"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
                         <div class="complex__info-text">
                             <h3 class="info__title">West town</h3>
                             <p class="info__text">
@@ -122,7 +141,7 @@
 
                     <form action="#" class="form">
                         <div class="form__container">
-                            <h4 class="form__container-title">Бажаєте придбати? Залиште заявку.</h4>
+                            <h4 class="form__container-title">Отримати повний огляд котеджу</h4>
 
                             <div class="form__container-actions">
                                 <input class="form-input" type="tel" name="phone" pattern="[+]{1}[0-9]{11,14}" maxlength="13" placeholder="+380(98)-99-99-999" required>
@@ -146,8 +165,8 @@
                     </div>
                     <div class="content__item">
                         <h4 class="content__item-title">Наші комплекси</h4>
-                        <a href="#" class="content__item-text">West town</a>
-                        <a href="#" class="content__item-text">Beskid home resorte</a>
+                        <a href="#" class="content__item-text">WEST TOWN</a>
+                        <a href="#" class="content__item-text">BESKID HOME RESORTE</a>
                     </div>
                     <div class="content__item">
                         <h4 class="content__item-title">Контактна інформація</h4>
@@ -171,5 +190,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
 </body>
 </html>
