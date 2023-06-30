@@ -45,32 +45,38 @@ body {
   top: 0;
   z-index: 2;
   width: 100%;
-  background-color: #181E1A;
+  padding: 10px 0;
+  transition: all 0.2s ease-in-out;
 }
 .header__items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
-.header__item {
+.header__items-logo {
+  width: 100px;
+  height: 65px;
+}
+.header__items-nav {
   display: flex;
   flex-direction: row;
   gap: 32px;
   align-items: center;
   padding: 10px 0;
 }
-.header__item-nav {
+.header__items .navigations {
   display: flex;
   flex-direction: row;
   gap: 32px;
 }
-.header__item-action {
+.header__items .navigations__action {
   color: #fff;
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
 }
-.header__item-action::after {
+.header__items .navigations__action::after {
   content: "";
   display: block;
   width: 0;
@@ -78,16 +84,21 @@ body {
   background: #fff;
   transition: width 0.3s;
 }
-.header__item-action:hover::after {
+.header__items .navigations__action:hover::after {
   width: 100%;
   transition: width 0.3s;
 }
-.header__item-number {
+.header__items-contacts {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.header__items-contacts .contacts__number {
   color: #fff;
   font-weight: 500;
   line-height: 24px;
 }
-.header__item-number::after {
+.header__items-contacts .contacts__number::after {
   content: "";
   display: block;
   width: 0;
@@ -95,11 +106,11 @@ body {
   background: #fff;
   transition: width 0.3s;
 }
-.header__item-number:hover::after {
+.header__items-contacts .contacts__number:hover::after {
   width: 100%;
   transition: width 0.3s;
 }
-.header__item-button {
+.header__items-contacts .contacts__button {
   width: 180px;
   height: 65px;
 }
@@ -295,4 +306,42 @@ body {
 .footer__actions-socials .social-icon {
   width: 20px;
   height: 20px;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header__burger::before, .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__items {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -3,71 +3,84 @@
     top: 0;
     z-index: 2;
     width: 100%;
-    background-color: $main-color;
+    padding: 10px 0;
+    transition: all 0.2s ease-in-out;
 
     &__items {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    &__item {
-        display: flex;
-        flex-direction: row;
-        gap: 32px;
         align-items: center;
-        padding: 10px 0;
+
+        &-logo {
+            width: 100px;
+            height: 65px;
+        }
 
         &-nav {
             display: flex;
             flex-direction: row;
             gap: 32px;
+            align-items: center;
+            padding: 10px 0;
         }
 
-        &-action {
-            color: #fff;
-            font-weight: 500;
-            line-height: 24px;
-            text-transform: uppercase;
+        .navigations {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
 
-            &::after {
-                content: '';
-                display: block;
-                width: 0;
-                height: 2px;
-                background: #fff;
-                transition: width .3s;
-            }
-
-            &:hover::after {
-                width: 100%;
-                transition: width .3s;
-            }
-        }
-
-        &-number {
-            color: #fff;
-            font-weight: 500;
-            line-height: 24px;
-
-            &::after {
-                content: '';
-                display: block;
-                width: 0;
-                height: 2px;
-                background: #fff;
-                transition: width .3s;
-            }
-
-            &:hover::after {
-                width: 100%;
-                transition: width .3s;
+            &__action {
+                color: #fff;
+                font-weight: 500;
+                line-height: 24px;
+                text-transform: uppercase;
+    
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: #fff;
+                    transition: width .3s;
+                }
+    
+                &:hover::after {
+                    width: 100%;
+                    transition: width .3s;
+                }
             }
         }
 
-        &-button {
-            width: 180px;
-            height: 65px;
+        &-contacts {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            .contacts__number {
+                color: #fff;
+                font-weight: 500;
+                line-height: 24px;
+    
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: #fff;
+                    transition: width .3s;
+                }
+    
+                &:hover::after {
+                    width: 100%;
+                    transition: width .3s;
+                }
+            }
+
+            .contacts__button {
+                width: 180px;
+                height: 65px;
+            }
         }
     }
 }
