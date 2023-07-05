@@ -29,6 +29,25 @@ body {
     margin: 0 80px;
 }
 
+.form-input {
+    width: 405px;
+    height: 65px;
+    padding: 0 20px;
+    align-items: center;
+    border: 1px solid $text-color;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: $base-font;
+    color: $text-color;
+    font-weight: 400;
+    line-height: 24px;
+
+    &:hover {
+        border: 1px solid #181E1A;
+    }
+}
+
 .main-button {
     width: 400px;
     height: 65px;
@@ -54,43 +73,470 @@ body {
 @import 'complexes';
 @import 'footer';
 
-.header__burger {
+
+.burger {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .header__burger {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 20px;
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        margin: 0 16px;
+    }
+    .complexes {
+        .complex__info {
 
-        &::before, &::after {
-            content: '';
-            background-color: #fff;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            left: 0;
-        }
-        & span {
-            position: absolute;
-            background-color: #fff;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            top: 9px;
-        }
+            &-slider {
+                width: 500px;
+                height: 500px;
+            }
 
-        &::before {
-            top: 0;
+            &-text {
+                width: 500px;
+                height: 500px;
+
+                .info__text {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
         }
-        &::after {
-            bottom: 0;
-        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .wrapper {
+        margin: 0 55px;
     }
 
     .header__items {
         display: none;
     }
+
+    .burger {
+        display: block;
+
+        &__container {
+            margin: 0 55px;
+        }
+
+        &__menu {
+            padding-top: 35px;
+            padding-bottom: 200px;
+            background-color: #161B18;
+            position: fixed;
+            transition: transform 0.2s;
+            transform: translateX(-100%);
+            left: 0;
+            right: 0;
+            z-index: 99;
+
+
+            &-title {
+                font-family: $base-font;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #fff;
+            }
+
+            &-actions {
+                padding-top: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+
+                .burger-input {
+                    width: 315px;
+                    height: 50px;
+                }
+
+                .burger-button {
+                    width: 320px;
+                    height: 50px;
+                }
+            }
+
+            &-contacts {
+                padding-top: 65px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .contacts__container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                &-title {
+                    font-family: $base-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $text-color;
+                }
+
+                &-text {
+                    font-family: $base-font;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .showMenu {
+            transform: translateX(0);
+        }
+    }
+    
+    .burger__items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+
+        .humburger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-icon {
+            position: fixed;
+            left: 0;
+            padding-left: 55px;
+            cursor: pointer;
+        }
+
+        .closeIcon {
+            display: none;
+        }
+    }
+
+    .complexes {
+        margin-top: 80px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 36px;
+            font-weight: 500;
+        }
+
+        &__items {
+            margin-top: 50px;
+        }
+
+        .complex__info {
+
+            &-slider {
+                width: 620px;
+                height: 620px;
+            }
+
+            &-text {
+                width: 620px;
+                height: 620px;
+
+                .info__text {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .complex__info {
+        flex-direction: column !important;
+        align-items: center;
+
+        &-text {
+            border-radius: 0 0 20px 20px !important;
+        }
+    }
+    
+    .footer {
+        &__content-items {
+            gap: 30px;
+        }
+        .content__item {
+
+            &-logo {
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin: 0 24px;
+    }
+
+    .complexes {
+        margin-top: 40px;
+
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        &__items {
+            margin-top: 32px;
+        }
+
+        .complex {
+            &__info {
+
+                &-slider {
+                    height: auto;
+                }
+                &-text {
+                    height: auto;
+                    padding: 16px 16px 70px 16px;
+                }
+
+            }
+
+            .form {
+                &__container {
+                    margin: 0 16px;
+                    &-title {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__content-items {
+            flex-direction: column;
+
+            .footer__logo {
+                align-items: center;
+                
+                .content__item {
+                    &-logo {
+                        width: 200px;
+                        height: 120px;
+                    }
+
+                    &-title {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    &-text {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .wrapper {
+        margin: 0 16px;
+    }
+
+    .about__content {
+        margin: 0 16px;
+        &-title {
+            font-size: 48px;
+            padding-bottom: 24px;
+            line-height: 32px;
+        }
+
+        &-text {
+            font-size: 20px;
+            line-height: 28px;
+            padding-top: 24px;
+        }
+
+    }
+
+    .complex {
+        &__info {
+
+            &-slider {
+                max-width: 540px;
+                height: auto;
+            }
+            &-text {
+                max-width: 540px;
+                height: auto;
+                padding: 16px 16px 70px 16px;
+            }
+
+        }
+
+        .form {
+            &__container {
+                margin: 0 16px;
+                &-title {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .burger {
+        &__menu {
+            padding-bottom: 0;
+            height: 100vh;
+
+            &-title {
+                text-align: center;
+            }
+
+            &-actions {
+                flex-direction: column;
+                padding-top: 32px;
+                gap: 32px;
+            }
+
+            &-contacts {
+                padding: 32px;
+                flex-direction: column;
+                gap: 32px;
+            }
+        }
+        &__container {
+            margin: 0 16px;
+        }
+    }
+
+    .burger__items {
+        justify-content: space-between;
+
+        &-icon {
+            padding-left: 16px;
+        }
+    }
+
+    .header__items-logo {
+        width: 70px;
+        height: 40px;
+    }
+
+    .about__content {
+        margin: 0 16px;
+        &-title {
+            font-size: 36px;
+            padding-bottom: 24px;
+            line-height: 32px;
+        }
+
+        &-text {
+            font-size: 20px;
+            line-height: 28px;
+            padding-top: 24px;
+        }
+
+    }
+
+    .complexes {
+        margin-top: 40px;
+
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        &__items {
+            margin-top: 32px;
+        }
+
+        .complex {
+            &__info {
+
+                &-slider {
+                    max-width: 320px;
+                    height: auto;
+                }
+                &-text {
+                    max-width: 320px;
+                    height: auto;
+                    padding: 16px 16px 70px 16px;
+                }
+
+            }
+
+            .form {
+                &__container {
+                    margin: 0 16px;
+                    &-title {
+                        font-size: 26px;
+                        line-height: 32px;
+                        text-align: center;
+                    }
+
+                    &-actions {
+                        .form-input {
+                            width: 290px;
+                            height: 50px;
+                        }
+
+                        .form-button {
+                            width: 290px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__content-items {
+            flex-direction: column;
+            border: none;
+
+            .footer__logo {
+                align-items: center;
+                
+                .content__item {
+                    &-logo {
+                        width: 200px;
+                        height: 120px;
+                    }
+
+                    &-title {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    &-text {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        &__actions {
+            flex-direction: column-reverse;
+            gap: 20px;
+            padding-top: 0;
+
+            &-socials {
+                border-bottom: 1px solid #fff;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
 }

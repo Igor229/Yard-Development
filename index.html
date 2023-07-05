@@ -10,10 +10,53 @@
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="header__burger">
-                <span></span>
+
+        <div class="burger">
+            <div class="burger__items">
+                <div class="humburger">
+                    <img src="assets/icons/menu-open.svg" alt="menu-open" class="burger__items-icon menuIcon">
+                    <img src="assets/icons/menu-close.svg" alt="menu-close" class="burger__items-icon closeIcon">
+                </div> 
+                <img src="assets/images/main-logo-white.png" alt="main-logo" class="header__items-logo">
             </div>
+
+            <div class="burger__menu">
+                <div class="burger__container">
+                    <h4 class="burger__menu-title">Замовити індивідуальну консультацію</h4>
+
+                    <form class="burger__menu-actions">
+                        <input class="form-input burger-input" type="tel" name="phone" pattern="[+]{1}[0-9]{11,14}" maxlength="13" placeholder="Номер телефону" required>
+                        <button class="burger-button main-button">Замовити</button>
+                    </form>
+
+                    <div class="burger__menu-contacts">
+                        <div class="contacts__container">
+                            <h4 class="contacts__container-title">Наші комплекси</h4>
+                            <a href="#" class="contacts__container-text">WEST TOWN</a>
+                            <a href="#" class="contacts__container-text">BESKID HOME RESORTE</a>
+                        </div>
+                        <div class="contacts__container">
+                            <h4 class="contacts__container-title">Контактна інформація</h4>
+                            <a href="#" class="contacts__container-text">+380 (98) 22 55 800 (Viber, Telegram)</a>
+                            <a href="#" class="contacts__container-text">yarddevelopment34@gmail.com</a>
+
+                            <div class="footer__actions-socials">
+                                <svg class="social-icon">
+                                    <use xlink:href="assets/icons/sprite.svg#instagram"></use>
+                                </svg>
+        
+                                <svg class="social-icon">
+                                    <use xlink:href="assets/icons/sprite.svg#facebook"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
             <div class="header__items">
                 <div class="header__items-nav">
 
@@ -42,7 +85,7 @@
         <div class="about__content">
             <h1 class="about__content-title">YARD DEVELOPMENT</h1>
             <p class="about__content-text">
-                Понад 89 будинків введено в експлуатацію. Дбаємо про ваш комфорт та затишок!
+                Понад 89 будинків введено в експлуатацію. Дбаємо про ваш <br> комфорт та затишок!
             </p>
         </div>
     </section>
@@ -56,17 +99,15 @@
                 <div class="complex">
                     <div class="complex__info">
                         <div class="complex__info-slider">
-                            <div class="complex__info-slider">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                      <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid1.png" alt="beskid-home"></div>
-                                      <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid2.png" alt="west-town"></div>
-                                      <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid3.png" alt="west-town"></div>
-                                      <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid4.png" alt="west-town"></div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                  </div>
-                            </div>
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid1.png" alt="beskid-home"></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid2.png" alt="west-town"></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid3.png" alt="west-town"></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid4.png" alt="west-town"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                </div>
                         </div>
                         <div class="complex__info-text">
                             <h3 class="info__title">Beskid home resorte</h3>
@@ -101,9 +142,9 @@
                             <h4 class="form__container-title">Отримати повний огляд котеджу</h4>
 
                             <div class="form__container-actions">
-                                <input class="form-input" type="tel" name="phone" pattern="[+]{1}[0-9]{11,14}" maxlength="13" placeholder="+380(98)-99-99-999" required>
-                                <input class="form-input" type="email" name="mail" placeholder="Введіть пошту" required>
-                                <button class="form-button main-button">Відправити</button>
+                                <input class="form-input item" type="tel" name="phone" pattern="[+]{1}[0-9]{11,14}" maxlength="13" placeholder="+380(98)-99-99-999" required>
+                                <input class="form-input item" type="email" name="mail" placeholder="Введіть пошту" required>
+                                <button class="form-button main-button item">Відправити</button>
                             </div>
                         </div>
                     </form>
@@ -154,9 +195,9 @@
                             <h4 class="form__container-title">Отримати повний огляд котеджу</h4>
 
                             <div class="form__container-actions">
-                                <input class="form-input" type="tel" name="phone" pattern="[+]{1}[0-9]{11,14}" maxlength="13" placeholder="+380(98)-99-99-999" required>
-                                <input class="form-input" type="email" name="mail" placeholder="Введіть пошту" required>
-                                <button class="form-button main-button">Відправити</button>
+                                <input class="form-input item" type="tel" name="phone" pattern="[+]{1}[0-9]{11,14}" maxlength="13" placeholder="+380(98)-99-99-999" required>
+                                <input class="form-input item" type="email" name="mail" placeholder="Введіть пошту" required>
+                                <button class="form-button main-button item">Відправити</button>
                             </div>
                         </div>
                     </form>
@@ -170,7 +211,7 @@
         <div class="wrapper">
             <div class="footer__content">
                 <div class="footer__content-items">
-                    <div class="content__item">
+                    <div class="content__item footer__logo">
                         <img src="assets/images/footer-logo.png" alt="main-logo" class="content__item-logo">
                     </div>
                     <div class="content__item">

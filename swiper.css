@@ -23,3 +23,9 @@
 .swiper-pagination-bullet {
   background-color: #527246;
 }
+
+@media screen and (max-width: 992px) {
+  .swiper {
+    border-radius: 20px 20px 0 0;
+  }
+}
