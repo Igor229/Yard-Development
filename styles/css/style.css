@@ -46,7 +46,6 @@ body {
   border-radius: 100px;
   background-color: #527246;
   color: #fff;
-  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -193,6 +192,25 @@ body {
   width: 620px;
   height: 620px;
 }
+.complexes .complex__info-types {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+}
+.complexes .complex__info-types .type__button {
+  width: 85px;
+  height: 45px;
+  background-color: #fff;
+  color: #7F9E56;
+  border: 1px solid #7F9E56;
+}
+.complexes .complex__info-types .type__button--active {
+  background-color: #527246;
+  color: #fff;
+  border: none;
+}
 .complexes .complex__info-text {
   width: 620px;
   height: 620px;
@@ -209,12 +227,14 @@ body {
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
+  text-transform: uppercase;
 }
 .complexes .complex__info-text .info__text {
-  font-size: 18px;
+  font-size: 16px;
   color: #969F9A;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: -0.176px;
 }
 .complexes .complex__info-text .info__text span {
   color: #7F9E56;

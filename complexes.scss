@@ -32,6 +32,28 @@
                 height: 620px;
             }
 
+            &-types {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                justify-content: start;
+                align-items: center;
+                
+                .type__button {
+                    width: 85px;
+                    height: 45px;
+                    background-color: #fff;
+                    color: $title-color;
+                    border: 1px solid $title-color;
+
+                    &--active {
+                        background-color: $button-color;
+                        color: #fff;
+                        border: none;
+                    }
+                }
+            }
+
             &-text {
                 width: 620px;
                 height: 620px;
@@ -49,13 +71,15 @@
                     font-size: 32px;
                     font-weight: 500;
                     line-height: 40px;
+                    text-transform: uppercase;
                 }
 
                 .info__text {
-                    font-size: 18px;
+                    font-size: 16px;
                     color: $text-color;
                     font-weight: 400;
                     line-height: 24px;
+                    letter-spacing: -0.176px;
 
                     & span {
                         color: $title-color;
