@@ -12,6 +12,11 @@ a, ul {
   color: #969F9A;
 }
 
+svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   color: #969F9A;
@@ -269,8 +274,6 @@ body {
   gap: 12px;
 }
 .complexes .complex__west-town .info__container .text-icon {
-  min-width: 24px;
-  min-height: 24px;
   width: 24px;
   height: 24px;
 }
