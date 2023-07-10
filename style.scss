@@ -92,6 +92,7 @@ body {
             &-text {
                 width: 500px;
                 height: 500px;
+                gap: 6px;
 
                 .info__text {
                     font-size: 16px;
@@ -246,6 +247,11 @@ body {
                     font-size: 18px;
                     line-height: 24px;
                 }
+            }
+
+            .sizes-container {
+                flex-direction: column !important;
+                gap: 10px !important;
             }
         }
     }
