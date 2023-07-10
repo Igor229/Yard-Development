@@ -376,6 +376,56 @@ svg {
   height: 24px;
 }
 
+.modal {
+  display: none;
+}
+.modal--active {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #161B18;
+  padding: 0 45px;
+}
+.modal__close {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 20px 0;
+}
+.modal__close-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.modal__title {
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 23px;
+  line-height: 28px;
+}
+.modal__actions {
+  margin: 50px 0 65px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+.modal__actions-action {
+  width: 360px;
+  height: 65px;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     margin: 0 16px;
@@ -417,6 +467,7 @@ svg {
     left: 0;
     right: 0;
     z-index: 99;
+    overflow: scroll;
   }
   .burger__menu-title {
     font-family: "Work Sans", sans-serif;
