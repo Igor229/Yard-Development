@@ -62,6 +62,11 @@ body {
   background-color: #7F9E56;
 }
 
+.text-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -272,10 +277,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 12px;
-}
-.complexes .complex__west-town .info__container .text-icon {
-  width: 24px;
-  height: 24px;
 }
 .complexes .complex__west-town .info__container .info-text {
   font-size: 16px;
