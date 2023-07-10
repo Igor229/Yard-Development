@@ -12,11 +12,6 @@ a, ul {
   color: #969F9A;
 }
 
-svg {
-  min-width: 24px;
-  min-height: 24px;
-}
-
 body {
   font-family: "Work Sans", sans-serif;
   color: #969F9A;
@@ -60,11 +55,6 @@ body {
 }
 .main-button:hover {
   background-color: #7F9E56;
-}
-
-.text-icon {
-  width: 24px;
-  height: 24px;
 }
 
 .header {
@@ -374,6 +364,16 @@ body {
 
 .burger {
   display: none;
+}
+
+svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.text-icon {
+  width: 24px;
+  height: 24px;
 }
 
 @media screen and (max-width: 1200px) {
