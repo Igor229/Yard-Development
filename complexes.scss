@@ -65,6 +65,7 @@
                 padding: 0 36px;
                 border-radius: 0 20px 20px 0;
                 
+                
 
                 .info__title {
                     font-family: $base-font;
@@ -98,7 +99,7 @@
             }
         }
 
-        &__west-town {
+        &__base-card {
             justify-content: start;
             padding-top: 36px;
             gap: 20px;

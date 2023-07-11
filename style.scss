@@ -20,7 +20,10 @@ a, ul {
     color: $text-color;
 }
 
-
+html {
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: $base-font;
@@ -167,6 +170,10 @@ svg {
                     font-size: 16px;
                     line-height: 20px;
                 }
+            }
+            
+            &-types {
+                padding: 20px 0;
             }
 
         }

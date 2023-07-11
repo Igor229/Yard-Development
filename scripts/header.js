@@ -67,3 +67,11 @@ contact.addEventListener('click', () => {
     })
 })
 
+
+const burgerLink = document.querySelectorAll('.burger-link')
+burgerLink.forEach(elem => {
+    elem.addEventListener('click', () => {
+        menu.classList.remove('showMenu')
+        console.log('hi');
+    })
+})

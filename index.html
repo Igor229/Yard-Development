@@ -34,8 +34,8 @@
                     <div class="burger__menu-contacts">
                         <div class="contacts__container">
                             <h4 class="contacts__container-title">Наші комплекси</h4>
-                            <a href="#" class="contacts__container-text">WEST TOWN</a>
-                            <a href="#" class="contacts__container-text">BESKID HOME RESORT</a>
+                            <a href="#west-town" class="contacts__container-text burger-link">WEST TOWN</a>
+                            <a href="#beskid-resort" class="contacts__container-text burger-link">BESKID HOME RESORT</a>
                         </div>
                         <div class="contacts__container">
                             <h4 class="contacts__container-title">Контактна інформація</h4>
@@ -61,10 +61,10 @@
             <div class="header__items">
                 <div class="header__items-nav">
 
-                    <img src="assets/images/main-logo-white.png" alt="main-logo" class="header__items-logo">
+                    <a href="#main-container"><img src="assets/images/main-logo-white.png" alt="main-logo" class="header__items-logo"></a>
                     <ul class="navigations">
-                        <li><a href="#" class="navigations__action">West town</a></li>
-                        <li><a href="#" class="navigations__action">Beskid home resort</a></li>
+                        <li><a href="#west-town" class="navigations__action">West town</a></li>
+                        <li><a href="#beskid-resort" class="navigations__action">Beskid home resort</a></li>
                     </ul>
                 </div>
 
@@ -82,9 +82,7 @@
         </div>
     </header>
 
-
-
-    <section class="about">
+    <section class="about" id="main-container">
         <div class="about__content">
             <h1 class="about__content-title">YARD DEVELOPMENT</h1>
             <p class="about__content-text">
@@ -99,7 +97,7 @@
 
             <div class="complexes__items">
                 
-                <div class="complex">
+                <div class="complex" id="beskid-resort">
                     <div class="complex__info">
                         <div class="complex__info-slider">
                             <div class="swiper mySwiper">
@@ -112,33 +110,66 @@
                                 <div class="swiper-pagination"></div>
                                 </div>
                         </div>
-                        <div class="complex__info-text">
+                        <div class="complex__info-text complex__base-card">
                             <h3 class="info__title">Beskid home resort</h3>
 
                             <div class="complex__info-types">
-                                <button class="main-button type__button type__button--active">Тип - 1</button>
-                                <button class="main-button type__button">Тип - 2</button>
+                                <button class="main-button type__button type__button--active" id="typeButton-one">Тип - 1</button>
+                                <button class="main-button type__button" id="typeButton-two">Тип - 2</button>
                             </div>
 
-                            <p class="info__text">
-                                Даний комплекс позиціонуємо як відпочинковий з власною СПА-зоною для людей,
-                                які бажають інвестувати кошти у нерухомість та здавати їх в оренду. <br>
-                                Є два типи котеджів, які відрізняється тільки за площею терас: <br>
-                                Тип 1 - площа 117,94 м2 - тераса 16,80 м2 <br>
-                                Тип 2 - площа 121,27 м2 - тераса 27,90 м2 <br>
-                                У вартість до кожного котеджу входить ділянка площею 1,5 сотки.
-                                Комплекс передбачає наявність власної СПА-зони, яка включатиме: <br>
-                                - сезонний басейн під відкритим небом <br>
-                                -джакузі/басейн із зоною гідромасажу <br>
-                                -фінська сауна, хамам <br>
-                                -тропічний душ <br>
-                                -послуги масажу <br>
-                                Будинки продаються під ключ, з ремонтом, меблями та технікою.
-                                Власна управлінська компанія яка бере на себе всі клопоти.
-                                Можливе розтермінування до кінця будівництва.
-                            </p>
+                            <div class="text-container">
+                                <div class="sizes-container">
+                                    <p class="info__text"> - Площа 117,94 м2</p>
+                                    <p class="info__text"> - Тераса – 16,80 м2</p>
+                                </div>
 
-                            <p class="info__text">Ціна: <span>250 000$</span></p>
+                                <div class="info__container">
+                                    <p class="info-text">
+                                        Двоповерхові високоякісні котеджі продаються повністю укомплектовані 
+                                        до проживання – з ремонтом, меблями та побутовою технікою. Будинок 
+                                        вміщує простору кухню-студію та спальню, а також санвузол на першому 
+                                        поверсі. Та ще дві окремі спальні з власними санвузлами на другому поверсі.
+                                    </p>
+                                </div>
+
+                                <div class="info__container">
+                                    <svg class="text-icon">
+                                        <use xlink:href="assets/icons/besket-icons.svg#elevator"></use>
+                                    </svg>
+                                    <p class="info-text">5 хв до найближчого підйомника;</p>
+                                </div>
+
+
+                                <div class="info__container">
+                                    <svg class="text-icon">
+                                        <use xlink:href="assets/icons/besket-icons.svg#spa-zone"></use>
+                                    </svg>
+                                    <p class="info-text">власна SPA-зона;</p>
+                                </div>
+
+
+                                <div class="info__container">
+                                    <svg class="text-icon">
+                                        <use xlink:href="assets/icons/besket-icons.svg#pool"></use>
+                                    </svg>
+                                    <p class="info-text">сезонний басейн;</p>
+                                </div>
+
+                                <div class="info__container">
+                                    <svg class="text-icon">
+                                        <use xlink:href="assets/icons/besket-icons.svg#terrace"></use>
+                                    </svg>
+                                    <p class="info-text">велика тераса з виглядом на гори;</p>
+                                </div>
+
+                                <div class="info__container">
+                                    <svg class="text-icon">
+                                        <use xlink:href="assets/icons/besket-icons.svg#company"></use>
+                                    </svg>
+                                    <p class="info-text">власна керуюча компанія.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -156,7 +187,7 @@
 
                 </div>
 
-                <div class="complex">
+                <div class="complex" id="west-town">
                     <div class="complex__info">
                         <div class="complex__info-slider">
                             <div class="swiper mySwiper">
@@ -167,7 +198,8 @@
                                 <div class="swiper-pagination"></div>
                               </div>
                         </div>
-                        <div class="complex__info-text complex__west-town">
+
+                        <div class="complex__info-text complex__base-card">
                             <h3 class="info__title">West town</h3>
                             
                             <div class="text-container">
@@ -238,30 +270,33 @@
             <div class="footer__content">
                 <div class="footer__content-items">
                     <div class="content__item footer__logo">
-                        <img src="assets/images/footer-logo.png" alt="main-logo" class="content__item-logo">
+                        <a href="#main-container"><img src="assets/images/footer-logo.png" alt="main-logo" class="content__item-logo"></a>
                     </div>
                     <div class="content__item">
                         <h4 class="content__item-title">Наші комплекси</h4>
-                        <a href="#" class="content__item-text">WEST TOWN</a>
-                        <a href="#" class="content__item-text">BESKID HOME RESORT</a>
+                        <a href="#west-town" class="content__item-text">WEST TOWN</a>
+                        <a href="#beskid-resort" class="content__item-text">BESKID HOME RESORT</a>
                     </div>
                     <div class="content__item">
                         <h4 class="content__item-title">Контактна інформація</h4>
-                        <a href="#" class="content__item-text">+380 (98) 22 55 800 (Viber, Telegram)</a>
-                        <a href="#" class="content__item-text">yarddevelopment34@gmail.com</a>
+                        <p class="content__item-text">+380 (98) 22 55 800 (Viber, Telegram)</p>
+                        <p class="content__item-text">yarddevelopment34@gmail.com</p>
                     </div>
                 </div>
 
                 <div class="footer__actions">
                     <p class="footer__actions-item">© 2023 | Всі права захищено</p>
                     <div class="footer__actions-socials">
-                        <svg class="social-icon">
-                            <use xlink:href="assets/icons/sprite.svg#instagram"></use>
-                        </svg>
-
-                        <svg class="social-icon">
-                            <use xlink:href="assets/icons/sprite.svg#facebook"></use>
-                        </svg>
+                        <a href="https://www.instagram.com/yard.development/" target="_blank">
+                            <svg class="social-icon">
+                                <use xlink:href="assets/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100093522396873" target="_blank">
+                            <svg class="social-icon">
+                                <use xlink:href="assets/icons/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -271,5 +306,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/swiper.js"></script>
+    <script src="scripts/besketTypes.js"></script>
 </body>
 </html>

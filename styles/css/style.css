@@ -12,6 +12,11 @@ a, ul {
   color: #969F9A;
 }
 
+html {
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   color: #969F9A;
@@ -248,27 +253,27 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.complexes .complex__west-town {
+.complexes .complex__base-card {
   justify-content: start;
   padding-top: 36px;
   gap: 20px;
 }
-.complexes .complex__west-town .text-container {
+.complexes .complex__base-card .text-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.complexes .complex__west-town .text-container .sizes-container {
+.complexes .complex__base-card .text-container .sizes-container {
   display: flex;
   flex-direction: row;
   gap: 70px;
 }
-.complexes .complex__west-town .info__container {
+.complexes .complex__base-card .info__container {
   display: flex;
   flex-direction: row;
   gap: 12px;
 }
-.complexes .complex__west-town .info__container .info-text {
+.complexes .complex__base-card .info__container .info-text {
   font-size: 16px;
   color: #969F9A;
   font-weight: 400;
@@ -442,6 +447,9 @@ svg {
   .complexes .complex__info-text .info__text {
     font-size: 16px;
     line-height: 20px;
+  }
+  .complexes .complex__info-types {
+    padding: 20px 0;
   }
 }
 @media screen and (max-width: 992px) {
@@ -661,8 +669,8 @@ svg {
 }
 @media screen and (max-width: 480px) {
   .burger__menu {
-    padding-bottom: 0;
-    height: 100vh;
+    padding-bottom: 50px;
+    height: 100%;
   }
   .burger__menu-title {
     text-align: center;
