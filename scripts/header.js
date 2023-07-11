@@ -72,6 +72,8 @@ const burgerLink = document.querySelectorAll('.burger-link')
 burgerLink.forEach(elem => {
     elem.addEventListener('click', () => {
         menu.classList.remove('showMenu')
-        console.log('hi');
+        document.body.style.overflow = 'auto'
+        menuIcon.style.display = 'block'
+        closeIcon.style.display = 'none'
     })
 })
