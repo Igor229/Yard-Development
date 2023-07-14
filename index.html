@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="shortcut icon" href="assets/icons/favicon-main.png" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('lrG-SRJzI2YZWRDiE');
+        })();
+    </script>
     <title>Yard Development</title>
 </head>
 <body>
@@ -102,10 +109,14 @@
                         <div class="complex__info-slider">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid1.png" alt="beskid-home"><div class="shadow"></div></div>
-                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid2.png" alt="west-town"><div class="shadow"></div></div>
-                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid3.png" alt="west-town"><div class="shadow"></div></div>
-                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/beskid4.png" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/besked1.png" alt="beskid-home"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/besked2.JPG" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/besked3.JPG" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/besked4.JPG" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/besked5.JPG" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/besked6.JPG" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/besked7.JPG" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/beskid-home/besked8.JPG" alt="west-town"><div class="shadow"></div></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 </div>
@@ -118,7 +129,7 @@
                                 <button class="main-button type__button" id="typeButton-two">Тип - 2</button>
                             </div>
 
-                            <div class="text-container">
+                            <div class="text-container besked-container">
                                 <div class="sizes-container">
                                     <p class="info__text"> - Площа 117,94 м2</p>
                                     <p class="info__text"> - Тераса – 16,80 м2</p>
@@ -178,9 +189,9 @@
                             <h4 class="form__container-title">Отримати повний огляд котеджу</h4>
 
                             <div class="form__container-actions">
-                                <input class="form-input item" type="tel" name="phone" maxlength="13" placeholder="Номер телефону" required>
-                                <input class="form-input item" type="email" name="mail" placeholder="Введіть пошту" required>
-                                <button class="form-button main-button item">Відправити</button>
+                                <input class="form-input item input-phone" type="tel" name="phone" maxlength="13" placeholder="Номер телефону" required>
+                                <input class="form-input item input-email" type="email" name="mail" placeholder="Введіть пошту" required>
+                                <button type="submit" class="form-button main-button item" id="besked-button">Відправити</button>
                             </div>
                         </div>
                     </form>
@@ -192,8 +203,16 @@
                         <div class="complex__info-slider">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west-town-main.png" alt="west-town"><div class="shadow"></div></div>
-                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west-town.png" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west1.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west2.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west3.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west4.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west5.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west6.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west7.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west8.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west9.jpg" alt="west-town"><div class="shadow"></div></div>
+                                    <div class="swiper-slide"><img class="slider-img" src="assets/images/west-town/west10.jpg" alt="west-town"><div class="shadow"></div></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                               </div>
@@ -253,9 +272,9 @@
                             <h4 class="form__container-title">Отримати розрахунок розтермінування</h4>
 
                             <div class="form__container-actions">
-                                <input class="form-input item" type="tel" name="phone" maxlength="13" placeholder="Номер телефону" required>
-                                <input class="form-input item" type="email" name="mail" placeholder="Введіть пошту" required>
-                                <button class="form-button main-button item">Відправити</button>
+                                <input class="form-input item input-phone" type="tel" name="phone" maxlength="13" placeholder="Номер телефону" required>
+                                <input class="form-input item input-email" type="email" name="mail" placeholder="Введіть пошту" required>
+                                <button class="form-button main-button item" id="west-button">Відправити</button>
                             </div>
                         </div>
                     </form>
@@ -307,5 +326,6 @@
     <script src="scripts/header.js"></script>
     <script src="scripts/swiper.js"></script>
     <script src="scripts/besketTypes.js"></script>
+    <script src="scripts/mail.js"></script>
 </body>
 </html>

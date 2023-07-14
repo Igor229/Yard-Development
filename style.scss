@@ -154,6 +154,7 @@ svg {
         margin: 0 16px;
     }
     .complexes {
+        
         .complex__info {
 
             &-slider {
@@ -176,6 +177,17 @@ svg {
                 padding: 20px 0;
             }
 
+            .complex__info-types {
+                padding: 10px 0;
+            }
+
+            .besked-container {
+                gap: 10px;
+            }
+        }
+
+        .complex__base-card {
+            padding-top: 20px;
         }
     }
 

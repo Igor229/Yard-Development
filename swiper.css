@@ -36,4 +36,41 @@
   .swiper {
     border-radius: 20px 20px 0 0;
   }
+
+  /* .swiper-slide img {
+    width: 920px;
+    height: 920px;
+  } */
+}
+
+/* @media screen and (max-width: 915px) {
+
+  .swiper-slide img {
+    width: 620px;
+    height: 620px;
+  }
+} */
+
+@media screen and (max-width: 820px) {
+
+  .swiper-slide img {
+    width: 620px;
+    height: 620px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+
+  .swiper-slide img {
+    width: 540px;
+    height: 540px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .swiper-slide img {
+    width: 320px;
+    height: 320px;
+  }
 }

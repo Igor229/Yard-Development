@@ -451,6 +451,15 @@ svg {
   .complexes .complex__info-types {
     padding: 20px 0;
   }
+  .complexes .complex__info .complex__info-types {
+    padding: 10px 0;
+  }
+  .complexes .complex__info .besked-container {
+    gap: 10px;
+  }
+  .complexes .complex__base-card {
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 992px) {
   .wrapper {
